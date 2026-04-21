@@ -5,14 +5,14 @@
     </pattern>
 
     <radialGradient id="glow-l" cx="85%" cy="50%" r="35%">
-      <stop offset="0%" stop-color="#D97706" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#216e39" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#216e39" stop-opacity="0"/>
     </radialGradient>
 
     <linearGradient id="shimmerBand-l" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#D97706" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#D97706" stop-opacity="0.60"/>
-      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#216e39" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#216e39" stop-opacity="0.60"/>
+      <stop offset="100%" stop-color="#216e39" stop-opacity="0"/>
     </linearGradient>
 
     <mask id="nameMask-l">
@@ -33,11 +33,11 @@
     </mask>
 
     <linearGradient id="gridPulse-l" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#D97706" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#D97706" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#D97706" stop-opacity="0.10"/>
-      <stop offset="55%" stop-color="#D97706" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#216e39" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#216e39" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#216e39" stop-opacity="0.10"/>
+      <stop offset="55%" stop-color="#216e39" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#216e39" stop-opacity="0"/>
     </linearGradient>
 
     <filter id="dotGlow-l" x="-200%" y="-200%" width="500%" height="500%">
@@ -70,15 +70,15 @@
   </rect>
 
   <!-- Vertical scan line -->
-  <line x1="0" y1="0" x2="1280" y2="0" stroke="#D97706" stroke-width="0.6" opacity="0">
+  <line x1="0" y1="0" x2="1280" y2="0" stroke="#216e39" stroke-width="0.6" opacity="0">
     <animate attributeName="y1" values="0;340" dur="18s" repeatCount="indefinite"/>
     <animate attributeName="y2" values="0;340" dur="18s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0.22;0.22;0" keyTimes="0;0.1;0.9;1" dur="18s" repeatCount="indefinite"/>
   </line>
 
   <!-- Meta label -->
-  <line x1="80" y1="72" x2="160" y2="72" stroke="#D97706" stroke-width="1.5"/>
-  <text x="172" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="11" fill="#D97706" letter-spacing="3">
+  <line x1="80" y1="72" x2="160" y2="72" stroke="#216e39" stroke-width="1.5"/>
+  <text x="172" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="11" fill="#216e39" letter-spacing="3">
     SR. BLOCKCHAIN ENGINEER — MULTI-CHAIN — 2023 →
   </text>
 
@@ -111,7 +111,7 @@
   <g transform="translate(1080, 170)">
 
     <!-- Fixed compass tick marks at r=142 -->
-    <g opacity="0.40" stroke="#D97706" stroke-linecap="round">
+    <g opacity="0.40" stroke="#216e39" stroke-linecap="round">
       <line x1="142" y1="0" x2="150" y2="0" stroke-width="1.2"/>
       <line x1="0" y1="-142" x2="0" y2="-150" stroke-width="1.2"/>
       <line x1="-142" y1="0" x2="-150" y2="0" stroke-width="1.2"/>
@@ -127,101 +127,101 @@
     </g>
 
     <!-- Rotating dashed outer ring -->
-    <circle cx="0" cy="0" r="135" fill="none" stroke="#D97706" stroke-width="0.8" stroke-dasharray="1 7" opacity="0.60">
+    <circle cx="0" cy="0" r="135" fill="none" stroke="#216e39" stroke-width="0.8" stroke-dasharray="1 7" opacity="0.60">
       <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite"/>
     </circle>
 
     <!-- Counter-rotating inner dashed ring -->
-    <circle cx="0" cy="0" r="118" fill="none" stroke="#D97706" stroke-width="0.6" stroke-dasharray="2 14" opacity="0.35">
+    <circle cx="0" cy="0" r="118" fill="none" stroke="#216e39" stroke-width="0.6" stroke-dasharray="2 14" opacity="0.35">
       <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="32s" repeatCount="indefinite"/>
     </circle>
 
     <!-- Breathing concentric rings (opacity only, staggered ease-in/out) -->
-    <circle cx="0" cy="0" r="108" fill="none" stroke="#D97706" stroke-width="1">
+    <circle cx="0" cy="0" r="108" fill="none" stroke="#216e39" stroke-width="1">
       <animate attributeName="opacity" values="0.10;0.35;0.10" dur="3.5s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
     </circle>
-    <circle cx="0" cy="0" r="82" fill="none" stroke="#D97706" stroke-width="1">
+    <circle cx="0" cy="0" r="82" fill="none" stroke="#216e39" stroke-width="1">
       <animate attributeName="opacity" values="0.20;0.50;0.20" dur="3.5s" begin="0.4s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
     </circle>
-    <circle cx="0" cy="0" r="55" fill="none" stroke="#D97706" stroke-width="1">
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#216e39" stroke-width="1">
       <animate attributeName="opacity" values="0.35;0.70;0.35" dur="3.5s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
     </circle>
-    <circle cx="0" cy="0" r="28" fill="none" stroke="#D97706" stroke-width="1">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#216e39" stroke-width="1">
       <animate attributeName="opacity" values="0.60;0.95;0.60" dur="3.5s" begin="1.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
     </circle>
 
     <!-- Orbiting satellite dots -->
     <g>
       <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="14s" repeatCount="indefinite"/>
-      <circle cx="108" cy="0" r="2.2" fill="#D97706" filter="url(#edgeGlow-l)"/>
+      <circle cx="108" cy="0" r="2.2" fill="#216e39" filter="url(#edgeGlow-l)"/>
     </g>
     <g>
       <animateTransform attributeName="transform" type="rotate" from="120 0 0" to="-240 0 0" dur="11s" repeatCount="indefinite"/>
-      <circle cx="82" cy="0" r="1.8" fill="#D97706" opacity="0.85"/>
+      <circle cx="82" cy="0" r="1.8" fill="#216e39" opacity="0.85"/>
     </g>
     <g>
       <animateTransform attributeName="transform" type="rotate" from="60 0 0" to="420 0 0" dur="9s" repeatCount="indefinite"/>
-      <circle cx="55" cy="0" r="1.6" fill="#D97706" opacity="0.9"/>
+      <circle cx="55" cy="0" r="1.6" fill="#216e39" opacity="0.9"/>
     </g>
     <g>
       <animateTransform attributeName="transform" type="rotate" from="200 0 0" to="-160 0 0" dur="6.5s" repeatCount="indefinite"/>
-      <circle cx="28" cy="0" r="1.3" fill="#D97706"/>
+      <circle cx="28" cy="0" r="1.3" fill="#216e39"/>
     </g>
 
     <!-- ==================== RADAR SWEEP ==================== -->
     <g>
       <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite"/>
-      <path d="M 0 0 L 108 0 A 108 108 0 0 0 107.59 -9.41 Z" fill="#D97706" opacity="0.50"/>
-      <path d="M 0 0 L 107.59 -9.41 A 108 108 0 0 0 106.36 -18.75 Z" fill="#D97706" opacity="0.40"/>
-      <path d="M 0 0 L 106.36 -18.75 A 108 108 0 0 0 104.32 -27.96 Z" fill="#D97706" opacity="0.33"/>
-      <path d="M 0 0 L 104.32 -27.96 A 108 108 0 0 0 101.49 -36.94 Z" fill="#D97706" opacity="0.27"/>
-      <path d="M 0 0 L 101.49 -36.94 A 108 108 0 0 0 97.88 -45.63 Z" fill="#D97706" opacity="0.22"/>
-      <path d="M 0 0 L 97.88 -45.63 A 108 108 0 0 0 93.53 -54.00 Z" fill="#D97706" opacity="0.18"/>
-      <path d="M 0 0 L 93.53 -54.00 A 108 108 0 0 0 88.46 -61.95 Z" fill="#D97706" opacity="0.15"/>
-      <path d="M 0 0 L 88.46 -61.95 A 108 108 0 0 0 82.72 -69.43 Z" fill="#D97706" opacity="0.12"/>
-      <path d="M 0 0 L 82.72 -69.43 A 108 108 0 0 0 76.37 -76.37 Z" fill="#D97706" opacity="0.10"/>
-      <path d="M 0 0 L 76.37 -76.37 A 108 108 0 0 0 69.43 -82.72 Z" fill="#D97706" opacity="0.08"/>
-      <path d="M 0 0 L 69.43 -82.72 A 108 108 0 0 0 61.95 -88.46 Z" fill="#D97706" opacity="0.065"/>
-      <path d="M 0 0 L 61.95 -88.46 A 108 108 0 0 0 54.00 -93.53 Z" fill="#D97706" opacity="0.054"/>
-      <path d="M 0 0 L 54.00 -93.53 A 108 108 0 0 0 45.63 -97.88 Z" fill="#D97706" opacity="0.044"/>
-      <path d="M 0 0 L 45.63 -97.88 A 108 108 0 0 0 36.94 -101.49 Z" fill="#D97706" opacity="0.036"/>
-      <path d="M 0 0 L 36.94 -101.49 A 108 108 0 0 0 27.96 -104.32 Z" fill="#D97706" opacity="0.030"/>
-      <path d="M 0 0 L 27.96 -104.32 A 108 108 0 0 0 18.75 -106.36 Z" fill="#D97706" opacity="0.024"/>
-      <path d="M 0 0 L 18.75 -106.36 A 108 108 0 0 0 9.41 -107.59 Z" fill="#D97706" opacity="0.019"/>
-      <path d="M 0 0 L 9.41 -107.59 A 108 108 0 0 0 0.00 -108.00 Z" fill="#D97706" opacity="0.015"/>
-      <path d="M 0 0 L 0.00 -108.00 A 108 108 0 0 0 -9.41 -107.59 Z" fill="#D97706" opacity="0.012"/>
-      <path d="M 0 0 L -9.41 -107.59 A 108 108 0 0 0 -18.75 -106.36 Z" fill="#D97706" opacity="0.008"/>
-      <line x1="0" y1="0" x2="108" y2="0" stroke="#D97706" stroke-width="1.4" opacity="0.95" filter="url(#edgeGlow-l)"/>
-      <circle cx="108" cy="0" r="2.2" fill="#D97706" filter="url(#edgeGlow-l)"/>
+      <path d="M 0 0 L 108 0 A 108 108 0 0 0 107.59 -9.41 Z" fill="#216e39" opacity="0.50"/>
+      <path d="M 0 0 L 107.59 -9.41 A 108 108 0 0 0 106.36 -18.75 Z" fill="#216e39" opacity="0.40"/>
+      <path d="M 0 0 L 106.36 -18.75 A 108 108 0 0 0 104.32 -27.96 Z" fill="#216e39" opacity="0.33"/>
+      <path d="M 0 0 L 104.32 -27.96 A 108 108 0 0 0 101.49 -36.94 Z" fill="#216e39" opacity="0.27"/>
+      <path d="M 0 0 L 101.49 -36.94 A 108 108 0 0 0 97.88 -45.63 Z" fill="#216e39" opacity="0.22"/>
+      <path d="M 0 0 L 97.88 -45.63 A 108 108 0 0 0 93.53 -54.00 Z" fill="#216e39" opacity="0.18"/>
+      <path d="M 0 0 L 93.53 -54.00 A 108 108 0 0 0 88.46 -61.95 Z" fill="#216e39" opacity="0.15"/>
+      <path d="M 0 0 L 88.46 -61.95 A 108 108 0 0 0 82.72 -69.43 Z" fill="#216e39" opacity="0.12"/>
+      <path d="M 0 0 L 82.72 -69.43 A 108 108 0 0 0 76.37 -76.37 Z" fill="#216e39" opacity="0.10"/>
+      <path d="M 0 0 L 76.37 -76.37 A 108 108 0 0 0 69.43 -82.72 Z" fill="#216e39" opacity="0.08"/>
+      <path d="M 0 0 L 69.43 -82.72 A 108 108 0 0 0 61.95 -88.46 Z" fill="#216e39" opacity="0.065"/>
+      <path d="M 0 0 L 61.95 -88.46 A 108 108 0 0 0 54.00 -93.53 Z" fill="#216e39" opacity="0.054"/>
+      <path d="M 0 0 L 54.00 -93.53 A 108 108 0 0 0 45.63 -97.88 Z" fill="#216e39" opacity="0.044"/>
+      <path d="M 0 0 L 45.63 -97.88 A 108 108 0 0 0 36.94 -101.49 Z" fill="#216e39" opacity="0.036"/>
+      <path d="M 0 0 L 36.94 -101.49 A 108 108 0 0 0 27.96 -104.32 Z" fill="#216e39" opacity="0.030"/>
+      <path d="M 0 0 L 27.96 -104.32 A 108 108 0 0 0 18.75 -106.36 Z" fill="#216e39" opacity="0.024"/>
+      <path d="M 0 0 L 18.75 -106.36 A 108 108 0 0 0 9.41 -107.59 Z" fill="#216e39" opacity="0.019"/>
+      <path d="M 0 0 L 9.41 -107.59 A 108 108 0 0 0 0.00 -108.00 Z" fill="#216e39" opacity="0.015"/>
+      <path d="M 0 0 L 0.00 -108.00 A 108 108 0 0 0 -9.41 -107.59 Z" fill="#216e39" opacity="0.012"/>
+      <path d="M 0 0 L -9.41 -107.59 A 108 108 0 0 0 -18.75 -106.36 Z" fill="#216e39" opacity="0.008"/>
+      <line x1="0" y1="0" x2="108" y2="0" stroke="#216e39" stroke-width="1.4" opacity="0.95" filter="url(#edgeGlow-l)"/>
+      <circle cx="108" cy="0" r="2.2" fill="#216e39" filter="url(#edgeGlow-l)"/>
     </g>
 
-    <!-- Secondary counter-rotating radar -->
+    <!-- Secondary counter-rotating radar (trail on CW side since rotation is CCW) -->
     <g opacity="0.85">
       <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="13s" repeatCount="indefinite"/>
-      <path d="M 0 0 L 55 0 A 55 55 0 0 0 54.79 -4.79 Z" fill="#D97706" opacity="0.32"/>
-      <path d="M 0 0 L 54.79 -4.79 A 55 55 0 0 0 54.16 -9.55 Z" fill="#D97706" opacity="0.20"/>
-      <path d="M 0 0 L 54.16 -9.55 A 55 55 0 0 0 53.12 -14.24 Z" fill="#D97706" opacity="0.13"/>
-      <path d="M 0 0 L 53.12 -14.24 A 55 55 0 0 0 51.68 -18.82 Z" fill="#D97706" opacity="0.07"/>
-      <line x1="0" y1="0" x2="55" y2="0" stroke="#D97706" stroke-width="1" opacity="0.9"/>
+      <path d="M 0 0 L 55 0 A 55 55 0 0 1 54.79 4.79 Z" fill="#216e39" opacity="0.32"/>
+      <path d="M 0 0 L 54.79 4.79 A 55 55 0 0 1 54.16 9.55 Z" fill="#216e39" opacity="0.20"/>
+      <path d="M 0 0 L 54.16 9.55 A 55 55 0 0 1 53.12 14.24 Z" fill="#216e39" opacity="0.13"/>
+      <path d="M 0 0 L 53.12 14.24 A 55 55 0 0 1 51.68 18.82 Z" fill="#216e39" opacity="0.07"/>
+      <line x1="0" y1="0" x2="55" y2="0" stroke="#216e39" stroke-width="1" opacity="0.9"/>
     </g>
 
     <!-- Signal pings -->
-    <circle cx="0" cy="0" r="5" fill="none" stroke="#D97706" stroke-width="1.5" opacity="0.9">
+    <circle cx="0" cy="0" r="5" fill="none" stroke="#216e39" stroke-width="1.5" opacity="0.9">
       <animate attributeName="r" values="5;105" dur="2.8s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.9;0" dur="2.8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="0" cy="0" r="5" fill="none" stroke="#D97706" stroke-width="1.5" opacity="0.9">
+    <circle cx="0" cy="0" r="5" fill="none" stroke="#216e39" stroke-width="1.5" opacity="0.9">
       <animate attributeName="r" values="5;105" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
     </circle>
 
     <!-- Center dot (opacity ease, no size change) -->
-    <circle cx="0" cy="0" r="5" fill="#D97706" filter="url(#dotGlow-l)">
+    <circle cx="0" cy="0" r="5" fill="#216e39" filter="url(#dotGlow-l)">
       <animate attributeName="opacity" values="0.85;1;0.85" dur="3.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
     </circle>
 
     <!-- Data readout (cycles) -->
-    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="8" fill="#D97706" text-anchor="middle" letter-spacing="1">
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="8" fill="#216e39" text-anchor="middle" letter-spacing="1">
       <text x="0" y="-122">
         <tspan>0xA1B2…C3D4</tspan>
         <animate attributeName="opacity" values="0;0.8;0.8;0;0;0" keyTimes="0;0.02;0.23;0.25;0.98;1" dur="12s" repeatCount="indefinite"/>
@@ -255,7 +255,7 @@
   </text>
 
   <!-- Blinking cursor -->
-  <rect x="1205" y="302" width="5" height="9" fill="#D97706">
+  <rect x="1205" y="302" width="5" height="9" fill="#216e39">
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
   </rect>
 </svg>
