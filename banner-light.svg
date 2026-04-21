@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 340" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Muhammad Imran — Senior Blockchain Engineer">
+  <defs>
+    <pattern id="grid-l" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#e5e5e5" stroke-width="1"/>
+    </pattern>
+
+    <radialGradient id="glow-l" cx="85%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="shimmerBand-l" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#D97706" stop-opacity="0.60"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+    </linearGradient>
+
+    <mask id="nameMask-l">
+      <text x="80" y="170" font-family="Helvetica, Arial, sans-serif" font-size="78" font-weight="800" fill="#ffffff" letter-spacing="-3">
+        Muhammad Imran
+      </text>
+    </mask>
+
+    <linearGradient id="stripFade-l" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="8%" stop-color="white" stop-opacity="1"/>
+      <stop offset="65%" stop-color="white" stop-opacity="1"/>
+      <stop offset="72%" stop-color="white" stop-opacity="0"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="stripMask-l">
+      <rect width="1280" height="340" fill="url(#stripFade-l)"/>
+    </mask>
+
+    <linearGradient id="gridPulse-l" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#D97706" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#D97706" stop-opacity="0.10"/>
+      <stop offset="55%" stop-color="#D97706" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="dotGlow-l" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="edgeGlow-l" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="340" fill="#ffffff"/>
+  <rect width="1280" height="340" fill="url(#grid-l)" opacity="0.55"/>
+  <rect width="1280" height="340" fill="url(#glow-l)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Grid pulse wave -->
+  <rect width="1280" height="680" y="-680" fill="url(#gridPulse-l)" opacity="0.9">
+    <animate attributeName="y" values="-680;340" dur="14s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Vertical scan line -->
+  <line x1="0" y1="0" x2="1280" y2="0" stroke="#D97706" stroke-width="0.6" opacity="0">
+    <animate attributeName="y1" values="0;340" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="0;340" dur="18s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.22;0.22;0" keyTimes="0;0.1;0.9;1" dur="18s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Meta label -->
+  <line x1="80" y1="72" x2="160" y2="72" stroke="#D97706" stroke-width="1.5"/>
+  <text x="172" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="11" fill="#D97706" letter-spacing="3">
+    SR. BLOCKCHAIN ENGINEER — MULTI-CHAIN — 2023 →
+  </text>
+
+  <!-- Name -->
+  <text x="80" y="170" font-family="Helvetica, Arial, sans-serif" font-size="78" font-weight="800" fill="#111111" letter-spacing="-3">
+    Muhammad Imran
+  </text>
+
+  <!-- Shimmer across name -->
+  <g mask="url(#nameMask-l)">
+    <rect x="-260" y="90" width="260" height="120" fill="url(#shimmerBand-l)">
+      <animate attributeName="x" values="-260;900;900" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Tagline -->
+  <text x="80" y="212" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#525252" font-weight="400" letter-spacing="0.5">
+    Multi-chain by necessity. Rust by choice.
+  </text>
+
+  <!-- Scrolling chain strip -->
+  <g mask="url(#stripMask-l)">
+    <text font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="11" fill="#a3a3a3" letter-spacing="2.5">
+      <tspan x="80" y="280">ETH · SOL · BTC · TON · SUI · TRON · POLYGON · ARB · BASE · OP · BNB · ETH · SOL · BTC · TON · SUI · TRON · POLYGON · ARB · BASE · OP · BNB · ETH · SOL · BTC · TON · SUI · TRON · POLYGON · ARB · BASE · OP · BNB · </tspan>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-680 0" dur="25s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- ==================== RIGHT-SIDE SENSOR CLUSTER ==================== -->
+  <g transform="translate(1080, 170)">
+
+    <!-- Fixed compass tick marks at r=142 -->
+    <g opacity="0.40" stroke="#D97706" stroke-linecap="round">
+      <line x1="142" y1="0" x2="150" y2="0" stroke-width="1.2"/>
+      <line x1="0" y1="-142" x2="0" y2="-150" stroke-width="1.2"/>
+      <line x1="-142" y1="0" x2="-150" y2="0" stroke-width="1.2"/>
+      <line x1="0" y1="142" x2="0" y2="150" stroke-width="1.2"/>
+      <line x1="123.0" y1="-71.0" x2="130.0" y2="-75.0" stroke-width="0.8"/>
+      <line x1="71.0" y1="-123.0" x2="75.0" y2="-130.0" stroke-width="0.8"/>
+      <line x1="-71.0" y1="-123.0" x2="-75.0" y2="-130.0" stroke-width="0.8"/>
+      <line x1="-123.0" y1="-71.0" x2="-130.0" y2="-75.0" stroke-width="0.8"/>
+      <line x1="-123.0" y1="71.0" x2="-130.0" y2="75.0" stroke-width="0.8"/>
+      <line x1="-71.0" y1="123.0" x2="-75.0" y2="130.0" stroke-width="0.8"/>
+      <line x1="71.0" y1="123.0" x2="75.0" y2="130.0" stroke-width="0.8"/>
+      <line x1="123.0" y1="71.0" x2="130.0" y2="75.0" stroke-width="0.8"/>
+    </g>
+
+    <!-- Rotating dashed outer ring -->
+    <circle cx="0" cy="0" r="135" fill="none" stroke="#D97706" stroke-width="0.8" stroke-dasharray="1 7" opacity="0.60">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Counter-rotating inner dashed ring -->
+    <circle cx="0" cy="0" r="118" fill="none" stroke="#D97706" stroke-width="0.6" stroke-dasharray="2 14" opacity="0.35">
+      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="32s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Breathing concentric rings (opacity only, staggered ease-in/out) -->
+    <circle cx="0" cy="0" r="108" fill="none" stroke="#D97706" stroke-width="1">
+      <animate attributeName="opacity" values="0.10;0.35;0.10" dur="3.5s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </circle>
+    <circle cx="0" cy="0" r="82" fill="none" stroke="#D97706" stroke-width="1">
+      <animate attributeName="opacity" values="0.20;0.50;0.20" dur="3.5s" begin="0.4s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </circle>
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#D97706" stroke-width="1">
+      <animate attributeName="opacity" values="0.35;0.70;0.35" dur="3.5s" begin="0.8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </circle>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#D97706" stroke-width="1">
+      <animate attributeName="opacity" values="0.60;0.95;0.60" dur="3.5s" begin="1.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </circle>
+
+    <!-- Orbiting satellite dots -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="14s" repeatCount="indefinite"/>
+      <circle cx="108" cy="0" r="2.2" fill="#D97706" filter="url(#edgeGlow-l)"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="120 0 0" to="-240 0 0" dur="11s" repeatCount="indefinite"/>
+      <circle cx="82" cy="0" r="1.8" fill="#D97706" opacity="0.85"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="60 0 0" to="420 0 0" dur="9s" repeatCount="indefinite"/>
+      <circle cx="55" cy="0" r="1.6" fill="#D97706" opacity="0.9"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="200 0 0" to="-160 0 0" dur="6.5s" repeatCount="indefinite"/>
+      <circle cx="28" cy="0" r="1.3" fill="#D97706"/>
+    </g>
+
+    <!-- ==================== RADAR SWEEP ==================== -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite"/>
+      <path d="M 0 0 L 108 0 A 108 108 0 0 0 107.59 -9.41 Z" fill="#D97706" opacity="0.50"/>
+      <path d="M 0 0 L 107.59 -9.41 A 108 108 0 0 0 106.36 -18.75 Z" fill="#D97706" opacity="0.40"/>
+      <path d="M 0 0 L 106.36 -18.75 A 108 108 0 0 0 104.32 -27.96 Z" fill="#D97706" opacity="0.33"/>
+      <path d="M 0 0 L 104.32 -27.96 A 108 108 0 0 0 101.49 -36.94 Z" fill="#D97706" opacity="0.27"/>
+      <path d="M 0 0 L 101.49 -36.94 A 108 108 0 0 0 97.88 -45.63 Z" fill="#D97706" opacity="0.22"/>
+      <path d="M 0 0 L 97.88 -45.63 A 108 108 0 0 0 93.53 -54.00 Z" fill="#D97706" opacity="0.18"/>
+      <path d="M 0 0 L 93.53 -54.00 A 108 108 0 0 0 88.46 -61.95 Z" fill="#D97706" opacity="0.15"/>
+      <path d="M 0 0 L 88.46 -61.95 A 108 108 0 0 0 82.72 -69.43 Z" fill="#D97706" opacity="0.12"/>
+      <path d="M 0 0 L 82.72 -69.43 A 108 108 0 0 0 76.37 -76.37 Z" fill="#D97706" opacity="0.10"/>
+      <path d="M 0 0 L 76.37 -76.37 A 108 108 0 0 0 69.43 -82.72 Z" fill="#D97706" opacity="0.08"/>
+      <path d="M 0 0 L 69.43 -82.72 A 108 108 0 0 0 61.95 -88.46 Z" fill="#D97706" opacity="0.065"/>
+      <path d="M 0 0 L 61.95 -88.46 A 108 108 0 0 0 54.00 -93.53 Z" fill="#D97706" opacity="0.054"/>
+      <path d="M 0 0 L 54.00 -93.53 A 108 108 0 0 0 45.63 -97.88 Z" fill="#D97706" opacity="0.044"/>
+      <path d="M 0 0 L 45.63 -97.88 A 108 108 0 0 0 36.94 -101.49 Z" fill="#D97706" opacity="0.036"/>
+      <path d="M 0 0 L 36.94 -101.49 A 108 108 0 0 0 27.96 -104.32 Z" fill="#D97706" opacity="0.030"/>
+      <path d="M 0 0 L 27.96 -104.32 A 108 108 0 0 0 18.75 -106.36 Z" fill="#D97706" opacity="0.024"/>
+      <path d="M 0 0 L 18.75 -106.36 A 108 108 0 0 0 9.41 -107.59 Z" fill="#D97706" opacity="0.019"/>
+      <path d="M 0 0 L 9.41 -107.59 A 108 108 0 0 0 0.00 -108.00 Z" fill="#D97706" opacity="0.015"/>
+      <path d="M 0 0 L 0.00 -108.00 A 108 108 0 0 0 -9.41 -107.59 Z" fill="#D97706" opacity="0.012"/>
+      <path d="M 0 0 L -9.41 -107.59 A 108 108 0 0 0 -18.75 -106.36 Z" fill="#D97706" opacity="0.008"/>
+      <line x1="0" y1="0" x2="108" y2="0" stroke="#D97706" stroke-width="1.4" opacity="0.95" filter="url(#edgeGlow-l)"/>
+      <circle cx="108" cy="0" r="2.2" fill="#D97706" filter="url(#edgeGlow-l)"/>
+    </g>
+
+    <!-- Secondary counter-rotating radar -->
+    <g opacity="0.85">
+      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="13s" repeatCount="indefinite"/>
+      <path d="M 0 0 L 55 0 A 55 55 0 0 0 54.79 -4.79 Z" fill="#D97706" opacity="0.32"/>
+      <path d="M 0 0 L 54.79 -4.79 A 55 55 0 0 0 54.16 -9.55 Z" fill="#D97706" opacity="0.20"/>
+      <path d="M 0 0 L 54.16 -9.55 A 55 55 0 0 0 53.12 -14.24 Z" fill="#D97706" opacity="0.13"/>
+      <path d="M 0 0 L 53.12 -14.24 A 55 55 0 0 0 51.68 -18.82 Z" fill="#D97706" opacity="0.07"/>
+      <line x1="0" y1="0" x2="55" y2="0" stroke="#D97706" stroke-width="1" opacity="0.9"/>
+    </g>
+
+    <!-- Signal pings -->
+    <circle cx="0" cy="0" r="5" fill="none" stroke="#D97706" stroke-width="1.5" opacity="0.9">
+      <animate attributeName="r" values="5;105" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="5" fill="none" stroke="#D97706" stroke-width="1.5" opacity="0.9">
+      <animate attributeName="r" values="5;105" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Center dot (opacity ease, no size change) -->
+    <circle cx="0" cy="0" r="5" fill="#D97706" filter="url(#dotGlow-l)">
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="3.5s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </circle>
+
+    <!-- Data readout (cycles) -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="8" fill="#D97706" text-anchor="middle" letter-spacing="1">
+      <text x="0" y="-122">
+        <tspan>0xA1B2…C3D4</tspan>
+        <animate attributeName="opacity" values="0;0.8;0.8;0;0;0" keyTimes="0;0.02;0.23;0.25;0.98;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+      <text x="0" y="-122" opacity="0">
+        <tspan>31.5497° N</tspan>
+        <animate attributeName="opacity" values="0;0;0.8;0.8;0;0" keyTimes="0;0.25;0.27;0.48;0.5;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+      <text x="0" y="-122" opacity="0">
+        <tspan>74.3436° E</tspan>
+        <animate attributeName="opacity" values="0;0;0.8;0.8;0;0" keyTimes="0;0.5;0.52;0.73;0.75;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+      <text x="0" y="-122" opacity="0">
+        <tspan>SYNC · OK</tspan>
+        <animate attributeName="opacity" values="0;0;0.8;0.8;0" keyTimes="0;0.75;0.77;0.98;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <!-- Status line -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="7.5" fill="#737373" text-anchor="middle" letter-spacing="2">
+      <text x="0" y="125">
+        <tspan>[ NODE · ACTIVE ]</tspan>
+      </text>
+    </g>
+
+  </g>
+
+  <!-- Version stamp -->
+  <text x="1200" y="310" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="10" fill="#737373" letter-spacing="1" text-anchor="end">
+    v.2026 — LAHORE, PAKISTAN
+  </text>
+
+  <!-- Blinking cursor -->
+  <rect x="1205" y="302" width="5" height="9" fill="#D97706">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
