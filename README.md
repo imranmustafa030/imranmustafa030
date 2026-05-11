@@ -9,4 +9,3 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/imranmustafa030/imranmustafa030/output/github-snake.svg">
   <img alt="snake eating my contribution graph" src="https://raw.githubusercontent.com/imranmustafa030/imranmustafa030/output/github-snake.svg"/>
 </picture>
-
