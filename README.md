@@ -1,8 +1,8 @@
-<picture>
+<!-- <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg">
   <img src="./banner-dark.svg" alt="Muhammad Imran — Senior Blockchain Engineer"/>
-</picture>
+</picture> -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imranmustafa030/imranmustafa030/output/github-snake-dark.svg">
